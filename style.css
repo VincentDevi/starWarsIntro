@@ -1,45 +1,45 @@
-*{
-    margin: 0;
-    padding: 0;
-}
 body{
-    overflow: hidden;
-    background-color: black;
     height: 100%;
     width: 100%;
-    margin: 50% 0 0;
-    position: relative;
+    background-color: black;
+    color: yellow;
+    overflow: hidden;
     
 }
 .center{
+    border: solid 3px red;
+    margin: 0 20% 20%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-        
+    justify-content: space-between;
+    perspective: 1000px;
+}
+h1{
+    border: solid 2px green;
+    align-self: center;
+}
+img{
+    border: solid 2px white;
+    align-self: center;
+}
+p{
+    margin: 0 5% 5%;
+    border: solid 2px orange;
+    text-align: justify;
+}
+
+.contenu{
+    display: flex;
+    flex-direction: column; 
+    border: solid 2px blue;
+    font-size: 2em;
+    line-height: 200%;
+    position: relative;
+    transform: rotateX(25deg);
+    animation: scroll 50s linear forwards;
 }
 @keyframes scroll {
-    from {top: 0;}
-    to { top: -6000px;}
+    from{top: 0;}
+    to{top: -2500px}
 }
-.contenu{
-    position: relative;
-    animation: scroll 60s linear forwards;
-    
-    transform: translateZ(-2500px);
-}
-.introduction{
-    
-    color: yellow;
-    font-size: 4em;
-}
-
-.texte{
-    color: yellow;
-    font-size: 2em;
-    line-height: 250%;
-    margin-left: 10%;
-    margin-right: 10%;
-}
-
-
