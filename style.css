@@ -3,45 +3,43 @@
     padding: 0;
 }
 body{
+    overflow: hidden;
+    background-color: black;
     height: 100%;
     width: 100%;
-    background-color: black;
-    overflow: hidden;
+    margin: 50% 0 0;
+    position: relative;
+    
 }
 .center{
-    color: yellow;
-    margin-left: 10%;
-    margin-right: 10%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+        
+}
+@keyframes scroll {
+    from {top: 0;}
+    to { top: -6000px;}
+}
+.contenu{
+    position: relative;
+    animation: scroll 60s linear forwards;
+    
+    transform: translateZ(-2500px);
 }
 .introduction{
-    opacity: 0;
-    animation-delay: 1s;
-    animation-duration: 1s;
-    animation-timing-function: ease-out;
-    animation-name: introduction;
-}
-@keyframes introduction {
-    0%{ opacity: 0;}
-    20%{ opacity: 1;}
-    80%{ opacity: 1;}
-    100%{ opacity: 0;}
-}
-
-
-.titre{
-    font-family: 'Roboto', sans-serif;
+    
+    color: yellow;
     font-size: 4em;
 }
-.texte{
-    font-family: 'Roboto', sans-serif;
-    font-size: 2em;
-    line-height: 200%;
-}
 
-    
+.texte{
+    color: yellow;
+    font-size: 2em;
+    line-height: 250%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
 
 
